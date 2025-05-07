@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+body { 
+    background-color: hsl(233, 47%, 7%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center; 
+    align-items: center;   
+}
+.violet {
+    color: hsl(277, 64%, 61%);
+}
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.header {
+    background-color: hsl(244, 38%, 16%);
+    width: 80vw;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 20px;
+    overflow: hidden;   
+}
+.header .header-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.header-text h1 { 
+    padding: 50px 20px;
+    font-weight: 700;
+    font-size: 45px;
+    color: hsl(0, 0%, 100%);
+}
+.header-text p {
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 20px;
+    padding: 0px 20px 50px 20px;
+}
+.stats .stats-item {
+    padding: 40px 0;
+}
+.stats .stats-item h2 {
+    font-weight: 700;
+    font-size: 30px;
+    color: hsl(0, 0%, 100%);
+}
+.stats .stats-item p {
+    color: hsla(0, 0%, 100%, 0.6);
+    font-size: 18px;
+    text-transform: uppercase
+}
+@media (min-width: 1400px) {
+    .header {
+        display: flex;
+        flex-direction: row-reverse;
+        text-align: center; 
+    }
+    .header .header-image {
+        width: 50%;
+    }
+    .header .header-text {
+        width: 50%;
+    }
+    .header .header-text h1,
+    .header .header-text p {
+        text-align: left;
+        padding-left: 50px;
+    }
+    .stats {
+        display: flex;
+        justify-content: space-between;
+    }
+    .stats .stats-item{
+        padding: 0;
+    }
+}
